@@ -7,7 +7,7 @@ import time
 # CONFIGURATION
 # =========================================================
 st.set_page_config(page_title="Transformer Insulation Digital Twin", layout="wide")
-st.title("⚡ Transformer Insulation Digital Twin")
+st.title(" Transformer Insulation Digital Twin EE-447")
 st.caption("Accelerated-life mode | Full life ≈ 300 days")
 
 SIM_DAYS_PER_TICK = 1.0  # 1 real second = 1 simulated day
