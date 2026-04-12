@@ -163,7 +163,7 @@ if st.session_state.pd_days > 0:
 # AGING MODEL (ACCELERATED)
 # =========================================================
 FAA = np.exp((15000 / 383) - (15000 / (st.session_state.Tx_temp + 273)))
-F_M = 1 + 0.3 * (st.session_state.Tx_moisture - 2)
+F_M = 1 + 0.5 * (st.session_state.Tx_moisture - 0.8)
 F_PD = 1 + 0.6 * (st.session_state.Tx_PD / 20)
 F_E = st.session_state.elec_stress
 
