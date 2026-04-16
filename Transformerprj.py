@@ -11,7 +11,7 @@ st.title(" Transformer Insulation Digital Twin EE-447")
 st.caption("Accelerated-life mode | Full life ≈ 300 days")
 
 SIM_DAYS_PER_TICK = 1.0  # 1 real second = 1 simulated day
-FAILURE_HI = 38.0
+FAILURE_HI = 35.0
 LIFE_ACCEL = 36.0  # ⬅️ LIFE COMPRESSION FACTOR
 
 # =========================================================
