@@ -83,8 +83,8 @@ st.sidebar.header("Trigger Events")
 
 PD_event_level = st.sidebar.slider("PD Activity Level (pC)", 20, 600, 100)
 
-if st.sidebar.button(" Fault (10 ms)") and st.session_state.fault_days <= 0:
-    st.session_state.fault_days = 10 / 86400000
+if st.sidebar.button(" Fault (1 ms)") and st.session_state.fault_days <= 0:
+    st.session_state.fault_days = 10 / 864000000
     st.session_state.event_log.append(f"Day {st.session_state.time_days:.2f}: Fault occurred (5 s)")
 
 if st.sidebar.button(" Rain (4 h)") and st.session_state.rain_days <= 0:
